@@ -1,0 +1,23 @@
+Use class-specific string tables with `NSObject(B7Localization)`
+category:
+
+- `-[NSObject localizedString:]` retrieves a string like
+  `NSLocalizedString()`.
+
+- `-[NSObject localizedStringWithFormat:]` retrieves a string like
+  `NSLocalizedString()` and uses the localized string as the format
+  parameter to `+[NSString stringWithFormat:]`.
+
+- You can override `+stringTableName` to use a custom strings file.
+  Default is the class name.
+
+- To change the strings file for individual objects, override
+  `-stringTableName`. The default implementation returns the result of
+  `+stringTableName`.
+
+- To change the bundle in which to look for the strings file, override
+  `-stringTableBundle`. The default is the bundle in which the
+  receiver's class is implemented.
+
+- `-localizedClassName` localizes the receivers class name using its
+  strings file.
