@@ -20,7 +20,7 @@
 - (id)initWithStringTableName:(NSString *)stringTableName
 					   bundle:(NSBundle *)bundle
 {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		_stringTableName = [stringTableName copy];
 		_bundle = [bundle retain];
 	}

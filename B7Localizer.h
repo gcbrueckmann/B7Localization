@@ -6,6 +6,9 @@
 //  Copyright 2010 bloo7. All rights reserved.
 //
 
+#import "NSObject+B7Localization.h"
+
+
 /** A dummy class that can localize strings. */
 @interface B7Localizer : NSObject {
 	NSString *_stringTableName;
