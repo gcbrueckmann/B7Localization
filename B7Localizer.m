@@ -35,8 +35,6 @@
 }
 
 
-@synthesize bundle = _bundle;
-@synthesize stringTableName = _stringTableName;
 
 
 - (NSBundle *)stringTableBundle {
