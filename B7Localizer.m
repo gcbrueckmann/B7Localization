@@ -29,8 +29,10 @@
 
 
 - (void)dealloc {
-	[_stringTableName release], _stringTableName = nil;
-	[_bundle release], _bundle = nil;
+    [_stringTableName release];
+    _stringTableName = nil;
+    [_bundle release];
+    _bundle = nil;
 	[super dealloc];
 }
 
